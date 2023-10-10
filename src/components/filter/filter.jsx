@@ -1,7 +1,10 @@
-
+import { useSelector } from "react-redux";
 import {Input,Wrapper,Title} from './filter.styled';
+import { getFilter } from "redux/selectors";
 
-const Filter = ({ filter, onChange }) => {
+const Filter = ({onChange }) => {
+
+  const filter = useSelector(getFilter);
   return (
     <Wrapper>
       <Title>Find contacts by name</Title>

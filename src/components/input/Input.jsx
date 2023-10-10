@@ -2,6 +2,7 @@ import { Formik } from 'formik';
 import * as yup from 'yup';
 import { FormWrapper, FormInput, Button, Error } from './input.styled';
 
+
 const schema = yup.object().shape({
   name: yup.string().min(3).max(32).required(),
   number: yup.string().min(3).required(),
