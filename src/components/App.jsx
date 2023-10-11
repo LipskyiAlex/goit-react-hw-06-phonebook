@@ -2,7 +2,6 @@ import React from 'react';
 import Input from './input/Input';
 import Contacts from './contacts/contacts';
 import Filter from './filter/filter';
-import { nanoid } from 'nanoid';
 import Notiflix from 'notiflix';
 import { MainContainer, MainTitle, SecondaryTitle } from './App.styled';
 import { useSelector } from "react-redux";
@@ -29,7 +28,6 @@ const App = () => {
         `${values.name} is already in contacts`
       );
     }
- 
      dispatch(addContact(values));
      resetForm();
   };
