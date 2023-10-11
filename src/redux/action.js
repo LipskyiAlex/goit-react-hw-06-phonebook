@@ -7,9 +7,8 @@ export const addContact = values => {
 
         type: 'contacts/addContact',
         payload: {
-    
             id:nanoid(),
-            name: values.name,
+            contact: values.name,
             number: values.number
            
         }
