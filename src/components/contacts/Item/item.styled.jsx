@@ -3,7 +3,8 @@ import styled from "@emotion/styled";
 
 export const Contact = styled.p`
 
-font-size:20px;
+font-size:16px;
+font-weight: bold;
 
 `
 
@@ -22,3 +23,4 @@ export const Delete = styled.div`
 cursor:pointer;
 
 `
+

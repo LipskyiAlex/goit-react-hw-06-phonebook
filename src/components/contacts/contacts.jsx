@@ -1,5 +1,5 @@
 import ItemContact from './Item/item';
-import { List, Item, EmptyList } from './contacts.styled';
+import { List, Item, EmptyList} from './contacts.styled';
 import { useSelector } from "react-redux";
 import { getContacts,getFilter} from 'redux/selectors';
 
