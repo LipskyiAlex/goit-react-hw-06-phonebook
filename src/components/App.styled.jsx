@@ -41,7 +41,7 @@ position:relative;
 
 export const Span = styled.span`
 
-color:  #4CAF50;
+// color:  #4CAF50;
 
 `
 
