@@ -1,8 +1,14 @@
 import { useSelector } from "react-redux";
 import {Input,Wrapper,Title} from './filter.styled';
 import { getFilter } from "redux/selectors";
+import { useDispatch } from 'react-redux';
+import {setFilter} from 'redux/action';
 
-const Filter = ({onChange }) => {
+
+const Filter = () => {
+
+  const dispatch = useDispatch();
+  const handleInputChange = e => dispatch(setFilter(e.target.value));
 
   const filter = useSelector(getFilter);
   return (
@@ -13,7 +19,7 @@ const Filter = ({onChange }) => {
         name="filter"
         placeholder="Who are you looking for?.."
         value={filter}
-        onChange={onChange}
+        onChange={handleInputChange}
       />
     </Wrapper>
   );
