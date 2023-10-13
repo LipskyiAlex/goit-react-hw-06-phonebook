@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { getContacts,getFilter} from 'redux/selectors';
 
 
-const Contacts = ({ onDelete }) => {
+const Contacts = () => {
 
   const contacts = useSelector(getContacts);
   const filter = useSelector(getFilter);
@@ -22,7 +22,7 @@ const Contacts = ({ onDelete }) => {
             <ItemContact
               contact={contact}
               number={number}
-              onDelete={() => onDelete(id)}
+              id={id}
             />
           </Item>
         ))}

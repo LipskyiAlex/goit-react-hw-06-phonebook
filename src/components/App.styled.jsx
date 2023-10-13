@@ -39,6 +39,12 @@ position:relative;
   }
 `;
 
+export const Span = styled.span`
+
+color:  #4CAF50;
+
+`
+
 export const SecondaryTitle = styled.h1`
   font-size: 32px;
   font-weight: 600;
