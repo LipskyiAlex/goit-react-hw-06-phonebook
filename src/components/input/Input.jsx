@@ -16,7 +16,6 @@ const Input = () => {
 
   const dispatch = useDispatch();
   const contacts = useSelector(getContacts);
-
   const initialValues = {
     name: '',
     number: '',
